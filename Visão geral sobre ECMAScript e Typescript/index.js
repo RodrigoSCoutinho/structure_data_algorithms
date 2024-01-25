@@ -38,6 +38,16 @@ var circleAreaES5 = function circleArea(r) {
 
 console.log(circleAreaES5(2));
 
+//simplificando o código com arrow function
+
+const circleAreaES6 = (r) => {
+    const PI = 3.14;
+    const area = PI * r * r;
+    return area;
+}
+
+console.log(circleAreaES6(2));
+
 // *TODO Operadores rest/spread
 
 function sum(...params) {
