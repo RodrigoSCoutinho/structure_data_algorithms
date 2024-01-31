@@ -8,8 +8,6 @@ for (let i = 0; i < pessoas.length; i++) {
 }
 
 
-
-
 //FIBONACCI
 
 const fibonacci = [];
