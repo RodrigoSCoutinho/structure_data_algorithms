@@ -1,21 +1,33 @@
 // contruindo um array tridimensional
 
-let averageTemp = [];
+// let averageTemp = [];
 
-averageTemp[0] = [72, 75, 79];
+// averageTemp[0] = [72, 75, 79];
 
-averageTemp[1] = [72, 75, 79];
+// averageTemp[1] = [72, 75, 79];
 
-averageTemp[2] = [72, 75, 79];
+// averageTemp[2] = [72, 75, 79];
 
-function printMatrix(MyMatrix) {
-    for (let i = 0; i < MyMatrix.length; i++) {
-        for (let j = 0; j < MyMatrix[i].length; j++) {
-           for (let k = 0; k < MyMatrix[i][j].length; k++) {
-                 console.log(MyMatrix[i][j][k]);
-           }
+
+const matrix3x3x3 = [];
+
+for (let i = 0; i < 3; i++) {
+    matrix3x3x3[i] = [];
+    for (let j = 0; j < 3; j++) {
+        matrix3x3x3[i][j] = [];
+        for (let z = 0; z < 3; z++) {
+            matrix3x3x3[i][j][z] = i + j + z;
         }
     }
 }
 
-console.table(averageTemp);
+//Para exibir o array tridimensional
+
+for (let i = 0; i < matrix3x3x3.length; i++) {
+    for (let j = 0; j < matrix3x3x3[i].length; j++) {
+        for (let z = 0; z < matrix3x3x3[i][j].length; z++) {
+            console.log(matrix3x3x3[i][j][z]);
+        }
+    }
+}
+
