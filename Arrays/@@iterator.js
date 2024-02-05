@@ -7,10 +7,6 @@ const iterator = numbers[Symbol.iterator]();
 let next = iterator.next();
 
 while(!next.done) {
-
     console.log(next.value);
     next = iterator.next();
-
-}
-
-//1
+}//1
