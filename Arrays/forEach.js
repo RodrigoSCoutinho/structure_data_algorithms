@@ -34,10 +34,12 @@ try {
 
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-for(let x = 0; x < array.length; x++) {
-    console.log(array[x]);
-    if(array[x] === 5) {
+for(let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+    if(array[i] === 5) {
         break;
     }
-    console.log("Continuando...", array[x])
+    console.log("Continuando...", array[i])
 }
+
+//1
