@@ -40,3 +40,19 @@ class Stack {
         this.items = [];
     }
 }
+
+const stacks = new Stack();
+
+console.log(stacks.isEmpty()); //exibe true
+
+stacks.push(5);
+stacks.push(8);
+
+console.log(stacks.peek()); //6
+
+stacks.push(11);
+
+console.log(stacks.size()); //exibe 3
+console.log(stacks.isEmpty()); // exibe false
+
+stacks.push(15);
